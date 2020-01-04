@@ -1,0 +1,29 @@
+#app {
+  width: 100%;
+}
+
+.btn {
+  width: 210px;
+  padding: 10px;
+}
+
+#tela {
+  width: 100%;
+}
+
+table {
+  width: 100%;
+}
+
+table thead {
+  font-size: 12pt;
+}
+
+table tbody {
+  font-size: 10pt;
+}
+
+#usandoLang {
+  font-size: 8pt;
+  /* color: black; */
+}

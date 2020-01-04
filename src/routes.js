@@ -1,7 +1,12 @@
 import { Router } from 'express';
+import { resolve } from 'path';
 import Data from './app/models/Data';
 
 const routes = new Router();
+
+routes.get('/', (req, res) => {
+  return res.sendFile(resolve(__dirname, 'views', 'index.html'));
+});
 
 routes.get('/datas', async (req, res) => {
   const where = {};
@@ -36,7 +41,7 @@ routes.get('/datas', async (req, res) => {
     limit: 10,
     offset: (page - 1) * 10,
   });
-  return res.json({ datas });
+  return res.json(datas);
 });
 
 export default routes;
