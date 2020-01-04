@@ -63,16 +63,9 @@
 
 </head>
 
-<body class="default-header-template cover-layout-destaques template-view portaltype-collective-cover-content site-IDG section-estilos-de-capa subsection-capa-2 subsection-capa-2-capa-padrao-2 userrole-anonymous" dir="ltr">
+<body class="default-header-template cover-layout-destaques template-view portaltype-collective-cover-content site-IDG section-estilos-de-capa subsection-capa-2 subsection-capa-2-capa-padrao-2 userrole-anonymous" dir="ltr" onload="search()">
     <noscript>É necessário ativar o javascript no seu navegador para continuar acessando</noscript>
-    <div id="topo">
-        <div id="barra-brasil">
-            <ul id="menu-barra-temp">
-                <li id="menu-barra-temp-li"><a href="#app" title="Link de redirecionamento para Portal do Governo Brasileiro">Portal do Governo Brasileiro</a></li>
-                <li><a id="tagA-LI" href="http://epwg.governoeletronico.gov.br/barra/atualize.html">Atualize sua Barra de Governo</a></li>
-            </ul>
-        </div>
-    </div>
+    
 
     <!-- User -->
     <!-- Header -->
@@ -110,7 +103,7 @@
                 <ul id="portal-services">
 
                     <li id="portal-services-link-2-1532035932">
-                        <a href="index.html" title="Link para página de Jovens com acesso à internet">Jovens com acesso à internet</a>
+                        <a href="/" title="Link para página de Jovens com acesso à internet">Jovens com acesso à internet</a>
                     </li>
 
                     <li id="portal-services-link-2-1532030932">
@@ -382,7 +375,7 @@
     <div id="portal-breadcrumbs">
         <span id="breadcrumbs-you-are-here">Você está aqui:</span>
         <span id="breadcrumbs-home">
-        <a href="index.html" title="Link para página inicial">Página Inicial</a>
+        <a href="/" title="Link para página inicial">Página Inicial</a>
         <span class="breadcrumbSeparator">
             &gt;
 
@@ -390,7 +383,7 @@
         </span>
         <span dir="ltr" id="breadcrumbs-1">
 
-            <a href="index.html" title="Link para pagina de Jovens com acesso à internet">Jovens com acesso à internet</a>
+            <a href="/" title="Link para pagina de Jovens com acesso à internet">Jovens com acesso à internet</a>
 
         </span>
 
@@ -429,37 +422,17 @@
                     <div id="content">
 
                         <div class="row">
-                            <input type="text" placeholder="Digite algo para buscar"/>
-                            <p id="usandoLang">Para selecionar a opção de menu, basta clicar com o <span lang="en">mouse</span> ou usar a tecla TAB</p>
-                            <div id="app">
+                          <p id="usandoLang">Para realizar a busca, basta escrever no campo abaixo. A pesquisa só poderá ser realizada em campos não numéricos</p>
+                          <div id="app">
+                            <fieldset>
+                                <legend class="hiddenStructure">Buscar dados</legend>
+                                <label class="hiddenStructure" for="textSearch">Buscar dados</label>
+                                <input name="searchableText" type="text" size="18" title="Buscar dados" placeholder="Buscar dados" class="searchField" id="textSearch" />
+                                <button class="btn btn-secondary" onclick="search()" title="Botão para buscar dados">Buscar dados</button>
+                              
+                              </fieldset>
 
-                                <button class="btn btn-secondary" onclick="search('AC')" title="Botão para filtrar dados somente do estado do ACRE">ACRE</button>
-                                <button class="btn btn-light" onclick="search('AL')" title="Botão para filtrar dados somente do estado do ALAGOAS">ALAGOAS</button>
-                                <button class="btn btn-secondary" onclick="search('AM')" title="Botão para filtrar dados somente do estado do AMAZONAS">AMAZONAS</button>
-                                <button class="btn btn-light" onclick="search('AP')" title="Botão para filtrar dados somente do estado do AMAPÁ">AMAPÁ</button>
-                                <button class="btn btn-secondary" onclick="search('BA')" title="Botão para filtrar dados somente do estado do BAHIA">BAHIA</button>
-                                <button class="btn btn-light" onclick="search('CE')" title="Botão para filtrar dados somente do estado do CEARÁ">CEARÁ</button>
-                                <button class="btn btn-secondary" onclick="search('DF')" title="Botão para filtrar dados somente do estado do DISTRITO FEDERAL">DISTRITO FEDERAL</button>
-                                <button class="btn btn-light" onclick="search('ES')" title="Botão para filtrar dados somente do estado do ESPIRITO SANTO">ESPIRITO SANTO</button>
-                                <button class="btn btn-secondary" onclick="search('GO')" title="Botão para filtrar dados somente do estado do GOIÁS">GOIÁS</button>
-                                <button class="btn btn-light" onclick="search('MA')" title="Botão para filtrar dados somente do estado do MARANHÃO">MARANHÃO</button>
-                                <button class="btn btn-secondary" onclick="search('MG')" title="Botão para filtrar dados somente do estado do MINAS GERAIS">MINAS GERAIS</button>
-                                <button class="btn btn-light" onclick="search('MS')" title="Botão para filtrar dados somente do estado do MATO-GROSSO DO SUL">MATO-GROSSO DO SUL</button>
-                                <button class="btn btn-secondary" onclick="search('MT')" title="Botão para filtrar dados somente do estado do MATO-GROSSO">MATO-GROSSO</button>
-                                <button class="btn btn-light" onclick="search('PA')" title="Botão para filtrar dados somente do estado do PARÁ">PARÁ</button>
-                                <button class="btn btn-secondary" onclick="search('PB')" title="Botão para filtrar dados somente do estado do PARAÍBA">PARAÍBA</button>
-                                <button class="btn btn-light" onclick="search('PE')" title="Botão para filtrar dados somente do estado do PERNAMBUCO">PERNAMBUCO</button>
-                                <button class="btn btn-secondary" onclick="search('PI')" title="Botão para filtrar dados somente do estado do PIAUÍ">PIAUÍ</button>
-                                <button class="btn btn-light" onclick="search('PR')" title="Botão para filtrar dados somente do estado do PARANÁ">PARANÁ</button>
-                                <button class="btn btn-secondary" onclick="search('RJ')" title="Botão para filtrar dados somente do estado do RIO DE JANEIRO">RIO DE JANEIRO</button>
-                                <button class="btn btn-light" onclick="search('RN')" title="Botão para filtrar dados somente do estado do RIO GRANDE DO NORTE">RIO GRANDE DO NORTE</button>
-                                <button class="btn btn-secondary" onclick="search('RO')" title="Botão para filtrar dados somente do estado do RONDÔNIA">RONDÔNIA</button>
-                                <button class="btn btn-light" onclick="search('RR')" title="Botão para filtrar dados somente do estado do RORAIMA">RORAIMA</button>
-                                <button class="btn btn-secondary" onclick="search('RS')" title="Botão para filtrar dados somente do estado do RIO GRANDE DO SUL">RIO GRANDE DO SUL</button>
-                                <button class="btn btn-light" onclick="search('SC')" title="Botão para filtrar dados somente do estado do SANTA CATARINA">SANTA CATARINA</button>
-                                <button class="btn btn-secondary" onclick="search('SE')" title="Botão para filtrar dados somente do estado do SERGIPE">SERGIPE</button>
-                                <button class="btn btn-light" onclick="search('SP')" title="Botão para filtrar dados somente do estado do SÃO PAULO">SÃO PAULO</button>
-                                <button class="btn btn-secondary" onclick="search('TO')" title="Botão para filtrar dados somente do estado do TOCANTINS">TOCANTINS</button>
+                            
 
                             </div>
 
@@ -818,6 +791,7 @@
     <script src="another2Main.js"></script> -->
 
     <script src="files/index.js"></script>
+   <!--  <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
 
 
 

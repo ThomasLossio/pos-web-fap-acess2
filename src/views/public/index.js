@@ -1,9 +1,13 @@
-function search(uf) {
+window.onload = search();
+
+function search() {
+  const inputElement = document.querySelector('#app input');
+  const textSearch = inputElement.value ? `?search=${inputElement.value}` : '';
   let saida = '';
 
-  const url = `datas`;
+  const url = `datas${textSearch}`;
 
-  $.getJSON(`datas`, function(data) {
+  $.getJSON(url, function(data) {
     saida += '<table class="table table-striped">';
     saida += '<thead>';
     saida += '<tr>';
