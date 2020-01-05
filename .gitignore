@@ -89,3 +89,5 @@ typings/
 
 tmp/uploads/*
 !tmp/uploads/.gitkeep
+
+dist
