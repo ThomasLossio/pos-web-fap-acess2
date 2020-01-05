@@ -1,8 +1,10 @@
+require('dotenv/config');
+
 module.exports = {
-  username: 'postgres',
-  password: 'adm123',
-  database: 'posfapacess2',
-  host: '127.0.0.1',
+  username: process.env.DB_USER,
+  password: process.env.DB_PASS,
+  database: process.env.DB_NAME,
+  host: process.env.DB_HOST,
   dialect: 'postgres',
   define: { timestamps: false, underscored: true, underscoredAll: true },
 };
